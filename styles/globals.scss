@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark-theme {
+  @apply bg-gradient-to-t from-gray-600 to-gray-400 text-white transition ease-in-out delay-150;
+}
+
+.light-theme {
+  @apply bg-gradient-to-t from-blue-500 to-cyan-400 text-white transition ease-in-out delay-150;
+}
