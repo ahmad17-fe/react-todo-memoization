@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 .dark-theme {
-  @apply bg-gradient-to-t from-gray-600 to-gray-400 text-white transition ease-in-out delay-150;
+  @apply bg-gray-600  text-white transition ease-in-out;
 }
 
 .light-theme {
-  @apply bg-gradient-to-t from-blue-500 to-cyan-400 text-white transition ease-in-out delay-150;
+  @apply bg-blue-400 text-black transition ease-in-out;
 }

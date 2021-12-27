@@ -1,12 +1,16 @@
 import DarkModeToggle from "react-dark-mode-toggle";
+import { constantTheme } from "../../context/app-theme";
 
-const ToggleTheme = ({ onChange, checked, size }) => {
+const ToggleTheme = ({ onChange, theme, size }) => {
   return (
-    <DarkModeToggle
-      onChange={onChange}
-      checked={checked === "dark" ? true : false}
-      size={size}
-    />
+    <div className="flex space-x-2">
+      <DarkModeToggle
+        onChange={onChange}
+        checked={theme === constantTheme.DARK ? true : false}
+        size={size}
+      />
+      <span className="capitalize">Mode {theme}</span>
+    </div>
   );
 };
 
